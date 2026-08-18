@@ -12,3 +12,10 @@ DerivedData/
 
 # macOS
 .DS_Store
+
+# CoreML model weights — exported locally via MLModels/export_to_coreml.ipynb,
+# not committed (same convention as the Android app's ONNX weights).
+*.mlpackage/
+
+# Jupyter
+.ipynb_checkpoints/

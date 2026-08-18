@@ -3,31 +3,41 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E658450F6C21D1CB84FDCE8 /* PADetector.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 4538D581B908F3A47A79FB8B /* PADetector.mlpackage */; };
 		19E3C5D615D65FB86AC23C4A /* BoundingBoxOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B323A57699F83CE9FBB9CE /* BoundingBoxOverlay.swift */; };
 		1F4AE319B1260836CF392F38 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 913B782087B632D1C80F93F7 /* README.md */; };
 		1F9E085F836C38086BCC50EB /* BenchmarkModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8357EB0BC5E6AE783D3086 /* BenchmarkModels.swift */; };
 		23A0B39BACE8412F2735E60B /* ResnetYoloTesterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D23F4EE570FCBD78D6B5FF /* ResnetYoloTesterApp.swift */; };
 		48462E1EA46E409089505980 /* PixelBufferUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C12925CB8B40891A29A08FA /* PixelBufferUtilities.swift */; };
+		7B77AEAA215CE6EE595CC699 /* ROIDetector.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 314AB772B338DEE86E5460FE /* ROIDetector.mlpackage */; };
 		922D69BB91C64E711283A546 /* ThreadSafeBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F366F63550BF1A3026F3A /* ThreadSafeBox.swift */; };
 		A3D66D5A4099574034FED3FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4F0FB96B72F71DB3241618 /* ContentView.swift */; };
 		B428FC3C25D49B294DF58138 /* InferenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCAD405CEF5666D824BC9BF /* InferenceManager.swift */; };
+		B6B078AC3298A87F8C9AD089 /* ResNetSubtype.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 7F395F419D04119AF8A33D15 /* ResNetSubtype.mlpackage */; };
 		C2EFA93092F42DB5CCD7A53D /* SystemMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2DF2A5766FCE38DAA37606 /* SystemMetrics.swift */; };
+		C9E7AD11BE5B69A6C6900131 /* YOLONanoDetector.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = E599D366C699CEC65F7F2A0B /* YOLONanoDetector.mlpackage */; };
 		D484934987EF6D3991080247 /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85728F001612759246EF864 /* CameraPreviewView.swift */; };
 		E0AB40700BCBFD6AFC794DA5 /* CSVLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC2C472AEF200A5683A9BF8 /* CSVLogger.swift */; };
+		E1117F0AFA98796BC1CA313D /* ResNetBinary.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = FA1578CE0F0DD3F5ACCE1A7F /* ResNetBinary.mlpackage */; };
+		E6485949C7A29379B296A45A /* export_to_coreml.ipynb in Resources */ = {isa = PBXBuildFile; fileRef = 0593E3FFB3356CE676A718CB /* export_to_coreml.ipynb */; };
 		F25EBFFBD7F6BAD2ADAF383A /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7490DF642B11942FB73753D9 /* CameraManager.swift */; };
 		F370EEE530578C8B896E7782 /* ControlPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8394084544B7D2C7AD8F0420 /* ControlPanelView.swift */; };
 		FB4B4F1E593A9F7BB1AAE269 /* HUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958970495700135B329BBDE2 /* HUDView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0593E3FFB3356CE676A718CB /* export_to_coreml.ipynb */ = {isa = PBXFileReference; lastKnownFileType = text; path = export_to_coreml.ipynb; sourceTree = "<group>"; };
+		314AB772B338DEE86E5460FE /* ROIDetector.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = ROIDetector.mlpackage; sourceTree = "<group>"; };
 		3C12925CB8B40891A29A08FA /* PixelBufferUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelBufferUtilities.swift; sourceTree = "<group>"; };
+		4538D581B908F3A47A79FB8B /* PADetector.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = PADetector.mlpackage; sourceTree = "<group>"; };
 		48B323A57699F83CE9FBB9CE /* BoundingBoxOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundingBoxOverlay.swift; sourceTree = "<group>"; };
 		6C2DF2A5766FCE38DAA37606 /* SystemMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMetrics.swift; sourceTree = "<group>"; };
 		7490DF642B11942FB73753D9 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		7F395F419D04119AF8A33D15 /* ResNetSubtype.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = ResNetSubtype.mlpackage; sourceTree = "<group>"; };
 		8394084544B7D2C7AD8F0420 /* ControlPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPanelView.swift; sourceTree = "<group>"; };
 		913B782087B632D1C80F93F7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		958970495700135B329BBDE2 /* HUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDView.swift; sourceTree = "<group>"; };
@@ -36,9 +46,11 @@
 		CBCAD405CEF5666D824BC9BF /* InferenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InferenceManager.swift; sourceTree = "<group>"; };
 		CE8357EB0BC5E6AE783D3086 /* BenchmarkModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkModels.swift; sourceTree = "<group>"; };
 		D03F366F63550BF1A3026F3A /* ThreadSafeBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadSafeBox.swift; sourceTree = "<group>"; };
-		E604154E719F84F9FFA3BAD4 /* ResnetYoloTester.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ResnetYoloTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E599D366C699CEC65F7F2A0B /* YOLONanoDetector.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = YOLONanoDetector.mlpackage; sourceTree = "<group>"; };
+		E604154E719F84F9FFA3BAD4 /* ResnetYoloTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResnetYoloTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7D23F4EE570FCBD78D6B5FF /* ResnetYoloTesterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResnetYoloTesterApp.swift; sourceTree = "<group>"; };
 		E85728F001612759246EF864 /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
+		FA1578CE0F0DD3F5ACCE1A7F /* ResNetBinary.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = ResNetBinary.mlpackage; sourceTree = "<group>"; };
 		FA4F0FB96B72F71DB3241618 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,7 +152,13 @@
 		C00ABA072F134EAFB3A97135 /* MLModels */ = {
 			isa = PBXGroup;
 			children = (
+				0593E3FFB3356CE676A718CB /* export_to_coreml.ipynb */,
+				4538D581B908F3A47A79FB8B /* PADetector.mlpackage */,
 				913B782087B632D1C80F93F7 /* README.md */,
+				FA1578CE0F0DD3F5ACCE1A7F /* ResNetBinary.mlpackage */,
+				7F395F419D04119AF8A33D15 /* ResNetSubtype.mlpackage */,
+				314AB772B338DEE86E5460FE /* ROIDetector.mlpackage */,
+				E599D366C699CEC65F7F2A0B /* YOLONanoDetector.mlpackage */,
 			);
 			path = MLModels;
 			sourceTree = "<group>";
@@ -190,7 +208,6 @@
 			);
 			mainGroup = 7018400C437977D85C7D4B9E;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -205,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F4AE319B1260836CF392F38 /* README.md in Resources */,
+				E6485949C7A29379B296A45A /* export_to_coreml.ipynb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,10 +242,15 @@
 				F370EEE530578C8B896E7782 /* ControlPanelView.swift in Sources */,
 				FB4B4F1E593A9F7BB1AAE269 /* HUDView.swift in Sources */,
 				B428FC3C25D49B294DF58138 /* InferenceManager.swift in Sources */,
+				0E658450F6C21D1CB84FDCE8 /* PADetector.mlpackage in Sources */,
 				48462E1EA46E409089505980 /* PixelBufferUtilities.swift in Sources */,
+				7B77AEAA215CE6EE595CC699 /* ROIDetector.mlpackage in Sources */,
+				E1117F0AFA98796BC1CA313D /* ResNetBinary.mlpackage in Sources */,
+				B6B078AC3298A87F8C9AD089 /* ResNetSubtype.mlpackage in Sources */,
 				23A0B39BACE8412F2735E60B /* ResnetYoloTesterApp.swift in Sources */,
 				C2EFA93092F42DB5CCD7A53D /* SystemMetrics.swift in Sources */,
 				922D69BB91C64E711283A546 /* ThreadSafeBox.swift in Sources */,
+				C9E7AD11BE5B69A6C6900131 /* YOLONanoDetector.mlpackage in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +263,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T6QRNFZR58;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ResnetYoloTester/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -317,6 +341,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T6QRNFZR58;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ResnetYoloTester/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
