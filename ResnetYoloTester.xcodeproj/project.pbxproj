@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19E3C5D615D65FB86AC23C4A /* BoundingBoxOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B323A57699F83CE9FBB9CE /* BoundingBoxOverlay.swift */; };
+		1F4AE319B1260836CF392F38 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 913B782087B632D1C80F93F7 /* README.md */; };
+		1F9E085F836C38086BCC50EB /* BenchmarkModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8357EB0BC5E6AE783D3086 /* BenchmarkModels.swift */; };
+		23A0B39BACE8412F2735E60B /* ResnetYoloTesterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D23F4EE570FCBD78D6B5FF /* ResnetYoloTesterApp.swift */; };
+		48462E1EA46E409089505980 /* PixelBufferUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C12925CB8B40891A29A08FA /* PixelBufferUtilities.swift */; };
+		922D69BB91C64E711283A546 /* ThreadSafeBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F366F63550BF1A3026F3A /* ThreadSafeBox.swift */; };
+		A3D66D5A4099574034FED3FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4F0FB96B72F71DB3241618 /* ContentView.swift */; };
+		B428FC3C25D49B294DF58138 /* InferenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCAD405CEF5666D824BC9BF /* InferenceManager.swift */; };
+		C2EFA93092F42DB5CCD7A53D /* SystemMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2DF2A5766FCE38DAA37606 /* SystemMetrics.swift */; };
+		D484934987EF6D3991080247 /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85728F001612759246EF864 /* CameraPreviewView.swift */; };
+		E0AB40700BCBFD6AFC794DA5 /* CSVLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC2C472AEF200A5683A9BF8 /* CSVLogger.swift */; };
+		F25EBFFBD7F6BAD2ADAF383A /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7490DF642B11942FB73753D9 /* CameraManager.swift */; };
+		F370EEE530578C8B896E7782 /* ControlPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8394084544B7D2C7AD8F0420 /* ControlPanelView.swift */; };
+		FB4B4F1E593A9F7BB1AAE269 /* HUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958970495700135B329BBDE2 /* HUDView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3C12925CB8B40891A29A08FA /* PixelBufferUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelBufferUtilities.swift; sourceTree = "<group>"; };
+		48B323A57699F83CE9FBB9CE /* BoundingBoxOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundingBoxOverlay.swift; sourceTree = "<group>"; };
+		6C2DF2A5766FCE38DAA37606 /* SystemMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMetrics.swift; sourceTree = "<group>"; };
+		7490DF642B11942FB73753D9 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		8394084544B7D2C7AD8F0420 /* ControlPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPanelView.swift; sourceTree = "<group>"; };
+		913B782087B632D1C80F93F7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		958970495700135B329BBDE2 /* HUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDView.swift; sourceTree = "<group>"; };
+		A9A4EF07689A9F89693C6BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AFC2C472AEF200A5683A9BF8 /* CSVLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVLogger.swift; sourceTree = "<group>"; };
+		CBCAD405CEF5666D824BC9BF /* InferenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InferenceManager.swift; sourceTree = "<group>"; };
+		CE8357EB0BC5E6AE783D3086 /* BenchmarkModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkModels.swift; sourceTree = "<group>"; };
+		D03F366F63550BF1A3026F3A /* ThreadSafeBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadSafeBox.swift; sourceTree = "<group>"; };
+		E604154E719F84F9FFA3BAD4 /* ResnetYoloTester.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ResnetYoloTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7D23F4EE570FCBD78D6B5FF /* ResnetYoloTesterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResnetYoloTesterApp.swift; sourceTree = "<group>"; };
+		E85728F001612759246EF864 /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
+		FA4F0FB96B72F71DB3241618 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0B7C99AF673BF9CC0CF7037B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				48B323A57699F83CE9FBB9CE /* BoundingBoxOverlay.swift */,
+				E85728F001612759246EF864 /* CameraPreviewView.swift */,
+				FA4F0FB96B72F71DB3241618 /* ContentView.swift */,
+				8394084544B7D2C7AD8F0420 /* ControlPanelView.swift */,
+				958970495700135B329BBDE2 /* HUDView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		29F2274982921AD1014B29F6 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				AFC2C472AEF200A5683A9BF8 /* CSVLogger.swift */,
+				6C2DF2A5766FCE38DAA37606 /* SystemMetrics.swift */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		2B0DDDB819C98E06A507D574 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E604154E719F84F9FFA3BAD4 /* ResnetYoloTester.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3699A6B78351C37AA933021A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E7D23F4EE570FCBD78D6B5FF /* ResnetYoloTesterApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3FA6254F2743095DB9AF299E /* ResnetYoloTester */ = {
+			isa = PBXGroup;
+			children = (
+				A9A4EF07689A9F89693C6BF7 /* Info.plist */,
+				3699A6B78351C37AA933021A /* App */,
+				6A2C75F82788366F662DABC6 /* Camera */,
+				29F2274982921AD1014B29F6 /* Logging */,
+				AE3BDA39C916C5B4705EB78F /* ML */,
+				C00ABA072F134EAFB3A97135 /* MLModels */,
+				637115AAECCF492E322812E6 /* Models */,
+				BCC97369A6BE815AF378B069 /* Utilities */,
+				0B7C99AF673BF9CC0CF7037B /* Views */,
+			);
+			path = ResnetYoloTester;
+			sourceTree = "<group>";
+		};
+		637115AAECCF492E322812E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE8357EB0BC5E6AE783D3086 /* BenchmarkModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6A2C75F82788366F662DABC6 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				7490DF642B11942FB73753D9 /* CameraManager.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		7018400C437977D85C7D4B9E = {
+			isa = PBXGroup;
+			children = (
+				3FA6254F2743095DB9AF299E /* ResnetYoloTester */,
+				2B0DDDB819C98E06A507D574 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE3BDA39C916C5B4705EB78F /* ML */ = {
+			isa = PBXGroup;
+			children = (
+				CBCAD405CEF5666D824BC9BF /* InferenceManager.swift */,
+				3C12925CB8B40891A29A08FA /* PixelBufferUtilities.swift */,
+			);
+			path = ML;
+			sourceTree = "<group>";
+		};
+		BCC97369A6BE815AF378B069 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D03F366F63550BF1A3026F3A /* ThreadSafeBox.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C00ABA072F134EAFB3A97135 /* MLModels */ = {
+			isa = PBXGroup;
+			children = (
+				913B782087B632D1C80F93F7 /* README.md */,
+			);
+			path = MLModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		368D6B165618A0F553B5336B /* ResnetYoloTester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44AA1B28D0C43A2DAC5DC142 /* Build configuration list for PBXNativeTarget "ResnetYoloTester" */;
+			buildPhases = (
+				E49D1E1F15B385BF1ACAA946 /* Sources */,
+				D785101BA8E9B5A259767955 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ResnetYoloTester;
+			packageProductDependencies = (
+			);
+			productName = ResnetYoloTester;
+			productReference = E604154E719F84F9FFA3BAD4 /* ResnetYoloTester.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6EEC21E62F47B6ED145E9C09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					368D6B165618A0F553B5336B = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8C58FA7732F7CB880A36D86E /* Build configuration list for PBXProject "ResnetYoloTester" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 7018400C437977D85C7D4B9E;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				368D6B165618A0F553B5336B /* ResnetYoloTester */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D785101BA8E9B5A259767955 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F4AE319B1260836CF392F38 /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E49D1E1F15B385BF1ACAA946 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9E085F836C38086BCC50EB /* BenchmarkModels.swift in Sources */,
+				19E3C5D615D65FB86AC23C4A /* BoundingBoxOverlay.swift in Sources */,
+				E0AB40700BCBFD6AFC794DA5 /* CSVLogger.swift in Sources */,
+				F25EBFFBD7F6BAD2ADAF383A /* CameraManager.swift in Sources */,
+				D484934987EF6D3991080247 /* CameraPreviewView.swift in Sources */,
+				A3D66D5A4099574034FED3FC /* ContentView.swift in Sources */,
+				F370EEE530578C8B896E7782 /* ControlPanelView.swift in Sources */,
+				FB4B4F1E593A9F7BB1AAE269 /* HUDView.swift in Sources */,
+				B428FC3C25D49B294DF58138 /* InferenceManager.swift in Sources */,
+				48462E1EA46E409089505980 /* PixelBufferUtilities.swift in Sources */,
+				23A0B39BACE8412F2735E60B /* ResnetYoloTesterApp.swift in Sources */,
+				C2EFA93092F42DB5CCD7A53D /* SystemMetrics.swift in Sources */,
+				922D69BB91C64E711283A546 /* ThreadSafeBox.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		04D2F34EBA224B79C9C2486B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ResnetYoloTester/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcrolfey.ResnetYoloTester;
+				PRODUCT_NAME = ResnetYoloTester;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3ECFE11AD08EF5B1CAF046EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4DF0333D12E1605138045D17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ResnetYoloTester/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcrolfey.ResnetYoloTester;
+				PRODUCT_NAME = ResnetYoloTester;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B6B7C2666A83DFBE26241486 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44AA1B28D0C43A2DAC5DC142 /* Build configuration list for PBXNativeTarget "ResnetYoloTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04D2F34EBA224B79C9C2486B /* Debug */,
+				4DF0333D12E1605138045D17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8C58FA7732F7CB880A36D86E /* Build configuration list for PBXProject "ResnetYoloTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6B7C2666A83DFBE26241486 /* Debug */,
+				3ECFE11AD08EF5B1CAF046EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6EEC21E62F47B6ED145E9C09 /* Project object */;
+}
