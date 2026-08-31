@@ -7,7 +7,8 @@ import QuartzCore
 /// Drives the camera session, dispatches every frame to `InferenceManager`,
 /// measures per-frame telemetry (latency, FPS, thermal state, memory), and
 /// publishes it for SwiftUI while streaming it to `CSVLogger` when a stress
-/// test is active.
+/// test is active. A stress test runs for a fixed `stressTestDuration` and
+/// auto-stops, or can be stopped early via `stopStressTest()`.
 ///
 /// Concurrency model: `AVCaptureVideoDataOutputSampleBufferDelegate` calls
 /// land on `videoDataOutputQueue` (a serial background queue), where
@@ -50,6 +51,13 @@ final class CameraManager: NSObject, ObservableObject {
     private let csvLogger = CSVLogger()
     private let architectureBox = ThreadSafeBox<PipelineArchitecture>(.architectureB)
     private let stressTestBox = ThreadSafeBox<Bool>(false)
+
+    /// Fixed duration for a stress test run; it auto-stops after this long
+    /// unless the user taps "Stop Stress Test" first.
+    private static let stressTestDuration: TimeInterval = 30
+    /// Touched only on the main thread (scheduled/cancelled alongside the
+    /// @Published stress-test state it guards).
+    private var stressTestTimeoutWorkItem: DispatchWorkItem?
 
     // MARK: - Frame bookkeeping (touched only from videoDataOutputQueue)
 
@@ -139,6 +147,7 @@ final class CameraManager: NSObject, ObservableObject {
                 await MainActor.run {
                     self.loggedFileURL = url
                     self.isStressTesting = true
+                    self.scheduleStressTestTimeout()
                 }
             } catch {
                 print("CameraManager: failed to start CSV session: \(error)")
@@ -147,10 +156,22 @@ final class CameraManager: NSObject, ObservableObject {
     }
 
     func stopStressTest() {
+        stressTestTimeoutWorkItem?.cancel()
+        stressTestTimeoutWorkItem = nil
         Task {
             await csvLogger.stopSession()
             await MainActor.run { self.isStressTesting = false }
         }
+    }
+
+    /// Auto-stops the run after `stressTestDuration`. Cancelled and
+    /// rescheduled on every `startStressTest()`, and cancelled by an early
+    /// manual `stopStressTest()`, so only one timeout is ever pending.
+    private func scheduleStressTestTimeout() {
+        stressTestTimeoutWorkItem?.cancel()
+        let workItem = DispatchWorkItem { [weak self] in self?.stopStressTest() }
+        stressTestTimeoutWorkItem = workItem
+        DispatchQueue.main.asyncAfter(deadline: .now() + Self.stressTestDuration, execute: workItem)
     }
 
     // MARK: - Thermal observation
